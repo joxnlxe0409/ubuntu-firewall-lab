@@ -17,7 +17,6 @@ ubuntu-firewall-lab/
 
 ## 🚀 Quick Start
 
-```bash
 # Clone the project
 git clone https://github.com/<your-username>/ubuntu-firewall-lab.git
 cd ubuntu-firewall-lab
@@ -59,38 +58,23 @@ Practice allowing and then blocking HTTP (port 80) using UFW scripts.
 ## Steps
 
 1. Setup UFW
-   ```bash
-   ./scripts/ufw-setup.sh
+./scripts/ufw-setup.sh
 Allow HTTP (port 80)
 
-
-bash
-코드 복사
 ./scripts/allow-http.sh
 Check status
 
-bash
-코드 복사
 ./scripts/check.sh
 Block HTTP (port 80)
 
-bash
-코드 복사
 ./scripts/block-http.sh
 Confirm changes
 
-bash
-코드 복사
 ./scripts/check.sh
 Expected Result
 When HTTP is allowed: 80/tcp ALLOW should appear in ufw status
 
 When HTTP is blocked: 80/tcp rule should be gone
-
-yaml
-코드 복사
-
----
 
 ## 🎯 Learning Objectives
 
@@ -98,8 +82,6 @@ yaml
 - Practice port-based firewall rules
 - Use Bash scripts to automate system configuration
 - Gain hands-on experience with system administration tools
-
----
 
 ## 📜 License
 
